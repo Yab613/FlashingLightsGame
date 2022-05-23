@@ -1,0 +1,125 @@
+/* *CSS - MENU.CSS* */
+
+.my-title {
+  position: absolute;
+  padding: 10px 0;
+  bottom: -2px;
+  background-color: var(--purple);
+  font-size: 0.75rem;
+  font-family: 'Orbitron', cursive;
+  display: none;
+}
+
+.cell-3:hover .my-title {
+  display: block;
+}
+
+.menu-btn {
+  position: relative;
+}
+
+.position-hs {
+  display: inline-block;
+  padding-right: 15px;
+  color: rgb(209, 172, 5);
+}
+
+
+#burger {
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  top: 10px;
+}
+
+#burger>i {
+  font-size: 2.5rem;
+}
+
+nav {
+  position: fixed;
+  font-size: 2.5rem;
+  z-index: 999;
+  right: -386px;
+  width: 386px;
+  background-color: var(--purple);
+  height: 100vh;
+}
+
+.menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.cell-3{
+  display: flex;
+  justify-content: center;
+  grid-column: span 3;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.menu-btn {
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+
+.menu-h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  padding-top: 10px;
+  text-decoration: underline;
+  font-family: 'Orbitron';
+}
+
+.space {
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: underline;
+  font-family: 'Orbitron';
+}
+
+.sound-label {
+  padding-top: -25px;
+}
+
+#settings-btn {
+  text-align: center;
+  font-size: 2.50rem;
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-decoration: underline;
+  font-family: 'Black Ops One';
+}
+
+.icon-container {
+  font-size: 100%;
+  padding: 0 15px;
+}
+
+.sound-text {
+  font-size: 1.25rem;
+  padding-left: 15px;
+}
+
+.burger-rotate {
+  animation: rotate 1s ease forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-450deg);
+  }
+}

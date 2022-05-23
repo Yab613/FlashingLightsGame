@@ -1,0 +1,56 @@
+/* *CSS - POINTSBOARD.CSS* */
+
+.board-elem {
+  margin-bottom: 3vh;
+}
+
+#points-board {
+  position: absolute;
+  right: 0;
+  color: white;
+  width: 386px;
+  padding: 5px 15px 0 15px;
+  font-size: 1.1rem;
+  font-family: 'Orbitron', sans-serif;
+  border: 5px solid var(--purple);
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+  min-height: 86%;
+}
+
+h2>span {
+  font-size: 1.1em;
+  color: rgb(35, 130, 250);
+  position: relative;
+  top: 1px;
+}
+
+#timer {
+  color: green;
+}
+
+#bad-clicks {
+  color: red;
+}
+
+.high-scorer {
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: rgb(2, 109, 109);
+  position: relative;
+  margin-bottom: 2vh;
+}
+
+.hs-date {
+  position: absolute;
+  top: -20px;
+  background-color: rgb(0, 168, 168);
+  font-size: 0.75rem;
+  font-family: 'Monoton', cursive;
+  display: none;
+}
+
+.high-scorer:hover .hs-date {
+  display: block;
+}

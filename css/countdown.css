@@ -1,0 +1,44 @@
+/* *CSS - COUNTDOWN.CSS* */
+
+#countdown {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+}
+
+#countdown div {
+  text-align: center;
+  font-size: 15rem;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 5px white;
+  animation: pulse 1s infinite;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes pulse {
+  0% {
+      -webkit-text-stroke: 0px white;
+  }
+  25% {
+      -webkit-text-stroke: 3px white;
+  }
+  50% {
+      -webkit-text-stroke: 8px white;
+  }
+  75% {
+      -webkit-text-stroke: 3px white;
+  }
+  100% {
+      -webkit-text-stroke: 0px white;
+  }
+}
+
+#number-color {
+  width: calc(100vw - 386px);
+  position: absolute;
+  height: 86vh;
+}

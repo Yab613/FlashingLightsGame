@@ -1,0 +1,82 @@
+/* *CSS - RESUME.CSS* */
+
+#resume {
+  height: 86%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/dev.appdrag.com/games-07926e/catchlight/assets/note.jpg);
+  background-size: cover;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#resume>h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+/* div */
+#P-E {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 17px;
+}
+
+/* h2/span */
+#PE {
+  color: blue;
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+/* div */
+#B-C {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 57px;
+}
+
+/* h2/span */
+#BC {
+  color: brown;
+  font-size: 2.1rem;
+}
+
+/* div */
+#P-L {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 40px;
+}
+
+/* h2/span */
+#PL {
+  color: darkgreen;
+  font-size: 2.1rem;
+}
+
+/* div */
+#F-S {
+  font-size: 3.1rem;
+  text-align: center;
+}
+
+/* h2/span */
+#FS {
+  color: darkmagenta;
+  font-size: 3.5rem;
+}
+
+/* div */
+#L-R {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+/* h2/span */
+#LR {
+  color: black;
+  font-size: 2.75rem;
+}

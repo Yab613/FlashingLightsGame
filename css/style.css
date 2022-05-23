@@ -1,0 +1,38 @@
+/* *CSS - STLYE.CSS* */
+
+:root {
+    --purple: purple;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    :root {
+        font-size: 17.78px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    background-color: rgb(0, 189, 0);
+}
+
+#main {
+    display: flex;
+}

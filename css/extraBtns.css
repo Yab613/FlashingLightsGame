@@ -1,0 +1,52 @@
+/* *CSS - EXTRABTNS.CSS* */
+
+#start-game {
+  width: 100%;
+  padding: 10px;
+  background-color: turquoise;
+  font-size: 3.2rem;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  min-height: 11vh;
+  border: none;
+  border-bottom: 5px solid var(--purple);
+}
+
+#starting-btn{
+  position: relative;
+}
+
+#threeDots{
+  position: absolute;
+  right: -100px;
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}
+
+#end-game-btn {
+  position: fixed;
+  display: none;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: 'Black Ops One', cursive;
+  border: 5px solid black;
+  top: 28.8px;
+  left: 25px;
+}
+
+#skip-animation-btn {
+  position: fixed;
+  display: none;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: 'Black Ops One', cursive;
+  border: 5px solid black;
+  top: 28.8px;
+  left: 25px;
+}
+
+#start-game>h2 {
+  text-align: left;
+  font-size: 1rem;
+}

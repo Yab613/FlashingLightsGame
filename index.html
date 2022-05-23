@@ -1,0 +1,196 @@
+<!-- *INDEX.HTML*  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monoton&family=Orbitron&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"> <!--  must be top of list  -->
+  <link rel="stylesheet" href="css/countdown.css">
+  <link rel="stylesheet" href="css/extraBtns.css">
+  <link rel="stylesheet" href="css/gameBtn.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/pause.css">
+  <link rel="stylesheet" href="css/pointsBoard.css">
+  <link rel="stylesheet" href="css/resume.css">
+  <link rel="stylesheet" href="css/sliders.css">
+  <title>Flashing Lights</title>
+</head>
+
+<body>
+
+  <nav>
+    <span id="burger"><i class="fa-solid fa-bars"></i></span>
+    <div class="menu">
+
+      <div class="menu-grid-cells cell-3">
+        <h2 id="settings-btn">SETTINGS</h2>
+      </div>
+
+      <div class="menu-grid-cells cell-3">
+        <h2 class="menu-h2 space">
+          PRESSING THE SPACEBAR WILL PAUSE THE GAME
+        </h2>
+      </div>
+
+      <div class="menu-grid-cells cell-3">
+        <h2 class="menu-h2" id="sound-label">SOUND</h2>
+        <p class="my-title">This switch turns on/off the Sound</p>
+      </div>
+      <div class="menu-grid-cells icon-container">
+        <i class="fa-solid fa-volume-xmark sound"></i>
+      </div>
+      <div class="menu-grid-cells" id="mute-switch-container">
+        <label class="switch">
+          <input id="mute-switch" type="checkbox" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="menu-grid-cells icon-container">
+        <i class="fa-solid fa-volume-high sound"></i>
+      </div>
+
+      <div class="menu-grid-cells cell-3">
+        <h2 class="menu-h2" id="anim-label">END ANIMATION</h2>
+        <p class="my-title">
+          This switch turns on/off the Ending Animation
+        </p>
+      </div>
+      <div class="menu-grid-cells icon-container">
+        <i class="fa-solid fa-text-slash"></i>
+      </div>
+      <div class="menu-grid-cells" id="anim-switch-container">
+        <label class="switch">
+          <input id="anim-switch" type="checkbox" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="menu-grid-cells icon-container">
+        <i class="fa-solid fa-text-height"></i>
+      </div>
+
+      <div class="menu-grid-cells cell-3">
+        <h2 class="menu-h2">CROSSHAIR SIZE</h2>
+        <p class="my-title">This switch changes the crosshair size</p>
+      </div>
+      <div class="menu-grid-cells icon-container">
+        <i class="fa-solid fa-crosshairs" style="position: relative; top: -4px"></i>
+      </div>
+      <div class="menu-grid-cells" id="corsshair-switch-container">
+        <label class="switch">
+          <input id="crosshair-switch" type="checkbox" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="menu-grid-cells icon-container">
+        <i class="fa-solid fa-crosshairs" style="
+              font-size: 30px;
+              padding: 15px;
+              position: relative;
+              top: -9px;
+              right: 17px;
+            "></i>
+      </div>
+    </div>
+
+  </nav>
+
+  <div id="side-btns">
+    <span id="end-game-btn">END GAME</span>
+    <span id="skip-animation-btn" style="display: none">SKIP ANIMATION </span>
+  </div>
+  <div id="start-game">
+    <span id="start-btn-start"> START GAME</span>
+    <span id="starting-btn" style="display: none">STARTING IN <span id="threeDots"></span></span>
+    <span id="start-btn-level" style="display: none">LEVEL: <span id="level">1</span></span>
+    <span id="play-again-btn" style="display: none">PLAY AGAIN <span id="playAgain"></span></span>
+    <span id="thanks-for-playing" style="display: none">THANKS FOR PLAYING! <span id="ty4p"></span></span>
+  </div>
+
+  <div id="main">
+    <div id="resume">
+      <h2>STATS</h2>
+      <div id="P-E">
+        <h2 class="anime P-E">
+        </h2>
+      </div>
+      <div id="B-C">
+        <h2 class="anime B-C">
+        </h2>
+      </div>
+      <div id="P-L">
+        <h2 class="anime P-L">
+        </h2>
+      </div>
+      <div id="F-S">
+        <h2 class="anime F-S">
+        </h2>
+      </div>
+      <div id="L-R">
+        <h2 class="anime L-R">
+        </h2>
+      </div>
+    </div>
+
+    <div id="number-color">
+      <div id="countdown">
+        <div> 3 </div>
+      </div>
+      <div id="btn-cont">
+        <div id="pause-screen"><i class="fa-solid fa-pause"></i><i class="fa-solid fa-play"></i></div>
+        <button class="game-btn"></button><button class="game-btn"></button><button class="game-btn"></button><button
+          class="game-btn"></button><button class="game-btn"></button><button class="game-btn"></button><button
+          class="game-btn"></button><button class="game-btn"></button><button class="game-btn"></button><button
+          class="game-btn"></button><button class="game-btn"></button><button class="game-btn"></button><button
+          class="game-btn"></button><button class="game-btn"></button><button class="game-btn"></button><button
+          class="game-btn"></button><button class="game-btn"></button><button class="game-btn"></button><button
+          class="game-btn"></button><button class="game-btn"></button>
+      </div>
+    </div>
+
+    <div id="points-board">
+      <div class="board-elem">
+        <h2>POINTS: <span id="points">0</span>
+        </h2>
+      </div>
+      <div class="board-elem">
+        <h2>TIMER: <span id="timer">00</span>
+        </h2>
+      </div>
+      <div class="board-elem">
+        <h2>CHALLENGE: <span id="challenge">0</span>
+        </h2>
+      </div>
+      <div class="board-elem">
+        <h2>BAD CLICKS: <span id="bad-clicks">0</span>
+        </h2>
+      </div>
+      <h2>HIGH SCORES:</h2>
+      <div class="board-elem" id="high-scores">
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Game Over Animation -->
+    <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js" type="module"></script>
+  </div>
+</body>
+
+</html>
